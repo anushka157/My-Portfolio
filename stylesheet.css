@@ -1,12 +1,14 @@
+/* Base styles (unchanged) */
 
-body{
+body {
     color: white;
 }
+
 html {
     scroll-behavior: smooth;
-  }
-  
-.header{
+}
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,7 +26,7 @@ html {
     right: 10px;
     top: 55%;
     transform: translateY(50%);
-    animation: moveUpDown 1s infinite; /* Reduced from 3s to 1.5s */
+    animation: moveUpDown 1s infinite;
 }
 
 .pilot-image img {
@@ -37,15 +39,15 @@ html {
     100% { transform: translateY(-50%); }
 }
 
-  
-.logo{
+.logo {
     position: relative;
     font-size: 25px;
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
-.navbar a{
+
+.navbar a {
     display: inline-block;
     font-size: 25px;
     color: white;
@@ -53,13 +55,13 @@ html {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: aqua;
 }
 
-.home{
+.home {
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -72,47 +74,40 @@ html {
     padding: 70px 10% 0;
 }
 
-.home-content{
+.home-content {
     max-width: 600px;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 32px;
     font-weight: 600;
 }
 
-.home-content h1{
-font-size: 56px;
-font-weight: 800;
-margin: -3px 0;
-
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin: -3px 0;
 }
 
-  
-  
-
-.home-sci a{
-display: inline-flex;
-justify-content: center;
-align-items: center;
-width: 40px;
-height: 40px;
-background: transparent;
-border: 2px solid bisque;
-border-radius: 20%;
-font-size: 20px;
-color: rgb(61, 61, 223);
-text-decoration: none;
-margin : 20px 15px 30px 0;
-
-
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid bisque;
+    border-radius: 20%;
+    font-size: 20px;
+    color: rgb(61, 61, 223);
+    text-decoration: none;
+    margin: 20px 15px 30px 0;
 }
 
-
-.home-sci a:hover{
-background: linear-gradient(90deg, rgb(23, 19, 77) 0%, rgb(14, 62, 71) 100%);
-color: rgb(249, 249, 253);
-box-shadow: 0 0 20px aqua;
+.home-sci a:hover {
+    background: linear-gradient(90deg, rgb(23, 19, 77) 0%, rgb(14, 62, 71) 100%);
+    color: rgb(249, 249, 253);
+    box-shadow: 0 0 20px aqua;
 }
 
 .btn-box {
@@ -127,14 +122,15 @@ box-shadow: 0 0 20px aqua;
     font-weight: 600;
     transition: background 0.3s, color 0.3s, transform 0.3s;
 }
+
 .btn-box:hover {
     background: rgb(0, 180, 255);
     color: white;
     transform: scale(1.05);
 }
+
 /* Projects Section */
 .projects-section {
-    
     background-color: #1e1e1e;
     padding: 50px 10%;
     text-align: center;
@@ -161,23 +157,23 @@ box-shadow: 0 0 20px aqua;
     overflow: hidden;
     width: 100%;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-item:hover {
-    transform: scale(1.05); /* Slightly enlarge the project item on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .project-item img {
-    width: 40%; /* Adjust the width of the image */
-    height: auto; /* Maintain the aspect ratio */
+    width: 40%;
+    height: auto;
     object-fit: cover;
 }
 
 .project-info {
     padding: 20px;
-    width: 60%; /* Adjust the width to occupy the remaining space */
+    width: 60%;
 }
 
 .project-info h3 {
@@ -191,14 +187,14 @@ box-shadow: 0 0 20px aqua;
     font-size: 16px;
     color: #d3d3d3;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
-/* Skills Section */
 /* Skills Section */
 .skills-section {
     background-color: #2a2a2a;
@@ -227,12 +223,12 @@ box-shadow: 0 0 20px aqua;
     max-width: 300px;
     width: 100%;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-item:hover {
-    transform: translateY(-10px); /* Add transform on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add box-shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .skill-icon {
@@ -264,7 +260,6 @@ box-shadow: 0 0 20px aqua;
     height: 100%;
     background: aqua;
 }
-
 
 /* Contact Section */
 .contact-section {
@@ -343,13 +338,14 @@ footer p {
     color: #d3d3d3;
     margin-top: 10px;
 }
+
 @keyframes wave {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
-  }
-  
-  .wavy-text {
+}
+
+.wavy-text {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
@@ -357,9 +353,9 @@ footer p {
     display: inline-block;
     animation: wave 2s infinite ease-in-out;
     position: relative;
-  }
-  
-  .wavy-text::before {
+}
+
+.wavy-text::before {
     content: '';
     position: absolute;
     top: 0;
@@ -370,4 +366,98 @@ footer p {
     -webkit-background-clip: text;
     color: transparent;
     z-index: -1;
-  }
+}
+
+/* Media Queries */
+
+/* Phone (mobile) */
+@media (max-width: 600px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .pilot-image {
+        top: 60%;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-sci a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .btn-box {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        padding: 30px 5%;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+    }
+
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-item img {
+        width: 100%;
+    }
+
+    .skill-item {
+        max-width: 100%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        padding: 20px 7%;
+    }
+
+    .pilot-image {
+        top: 50%;
+    }
+
+    .home-content h3 {
+        font-size: 28px;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .home-sci a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .btn-box {
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        padding: 40px 7%;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+    }
+}
