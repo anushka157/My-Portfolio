@@ -1,14 +1,12 @@
-/* Base styles (unchanged) */
 
-body {
+body{
     color: white;
 }
-
 html {
     scroll-behavior: smooth;
-}
-
-.header {
+  }
+  
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +24,7 @@ html {
     right: 10px;
     top: 55%;
     transform: translateY(50%);
-    animation: moveUpDown 1s infinite;
+    animation: moveUpDown 1s infinite; /* Reduced from 3s to 1.5s */
 }
 
 .pilot-image img {
@@ -39,15 +37,15 @@ html {
     100% { transform: translateY(-50%); }
 }
 
-.logo {
+  
+.logo{
     position: relative;
     font-size: 25px;
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
-
-.navbar a {
+.navbar a{
     display: inline-block;
     font-size: 25px;
     color: white;
@@ -55,13 +53,13 @@ html {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-}
 
-.navbar a:hover {
+}
+.navbar a:hover{
     color: aqua;
 }
 
-.home {
+.home{
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -74,40 +72,47 @@ html {
     padding: 70px 10% 0;
 }
 
-.home-content {
+.home-content{
     max-width: 600px;
 }
 
-.home-content h3 {
+.home-content h3{
     font-size: 32px;
     font-weight: 600;
 }
 
-.home-content h1 {
-    font-size: 56px;
-    font-weight: 800;
-    margin: -3px 0;
+.home-content h1{
+font-size: 56px;
+font-weight: 800;
+margin: -3px 0;
+
 }
 
-.home-sci a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid bisque;
-    border-radius: 20%;
-    font-size: 20px;
-    color: rgb(61, 61, 223);
-    text-decoration: none;
-    margin: 20px 15px 30px 0;
+  
+  
+
+.home-sci a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid bisque;
+border-radius: 20%;
+font-size: 20px;
+color: rgb(61, 61, 223);
+text-decoration: none;
+margin : 20px 15px 30px 0;
+
+
 }
 
-.home-sci a:hover {
-    background: linear-gradient(90deg, rgb(23, 19, 77) 0%, rgb(14, 62, 71) 100%);
-    color: rgb(249, 249, 253);
-    box-shadow: 0 0 20px aqua;
+
+.home-sci a:hover{
+background: linear-gradient(90deg, rgb(23, 19, 77) 0%, rgb(14, 62, 71) 100%);
+color: rgb(249, 249, 253);
+box-shadow: 0 0 20px aqua;
 }
 
 .btn-box {
@@ -122,15 +127,14 @@ html {
     font-weight: 600;
     transition: background 0.3s, color 0.3s, transform 0.3s;
 }
-
 .btn-box:hover {
     background: rgb(0, 180, 255);
     color: white;
     transform: scale(1.05);
 }
-
 /* Projects Section */
 .projects-section {
+    
     background-color: #1e1e1e;
     padding: 50px 10%;
     text-align: center;
@@ -157,23 +161,23 @@ html {
     overflow: hidden;
     width: 100%;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
 }
 
 .project-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05); /* Slightly enlarge the project item on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect on hover */
 }
 
 .project-item img {
-    width: 40%;
-    height: auto;
+    width: 40%; /* Adjust the width of the image */
+    height: auto; /* Maintain the aspect ratio */
     object-fit: cover;
 }
 
 .project-info {
     padding: 20px;
-    width: 60%;
+    width: 60%; /* Adjust the width to occupy the remaining space */
 }
 
 .project-info h3 {
@@ -187,14 +191,14 @@ html {
     font-size: 16px;
     color: #d3d3d3;
 }
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'poppins',sans-serif;
 }
 
+/* Skills Section */
 /* Skills Section */
 .skills-section {
     background-color: #2a2a2a;
@@ -223,12 +227,12 @@ html {
     max-width: 300px;
     width: 100%;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
 }
 
 .skill-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px); /* Add transform on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add box-shadow on hover */
 }
 
 .skill-icon {
@@ -260,6 +264,7 @@ html {
     height: 100%;
     background: aqua;
 }
+
 
 /* Contact Section */
 .contact-section {
@@ -338,14 +343,13 @@ footer p {
     color: #d3d3d3;
     margin-top: 10px;
 }
-
 @keyframes wave {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
-}
-
-.wavy-text {
+  }
+  
+  .wavy-text {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
@@ -353,9 +357,9 @@ footer p {
     display: inline-block;
     animation: wave 2s infinite ease-in-out;
     position: relative;
-}
-
-.wavy-text::before {
+  }
+  
+  .wavy-text::before {
     content: '';
     position: absolute;
     top: 0;
@@ -366,91 +370,4 @@ footer p {
     -webkit-background-clip: text;
     color: transparent;
     z-index: -1;
-}
-
-/* Media Queries */
-/* Projects Section Media Queries */
-/* Projects Section Media Queries */
-
-/* Phone (mobile) */
-@media (max-width: 600px) {
-    .projects-section {
-        padding: 30px 5%;
-        overflow-x: auto; /* Enable horizontal scrolling */
-    }
-
-    .projects-grid {
-        flex-direction: column;
-        gap: 20px;
-        /* Ensure the grid can scroll horizontally */
-        display: flex;
-        flex-wrap: nowrap; /* Prevent wrapping */
-        overflow-x: auto;
-        scroll-snap-type: x mandatory; /* Optional: Snap scrolling */
-    }
-
-    .project-item {
-        flex: 0 0 auto; /* Ensure items don't shrink or grow */
-        width: 100%;
-        max-width: 100%; /* Ensure items fit within the viewport */
-        text-align: center; /* Center align text for mobile */
-        scroll-snap-align: start; /* Optional: Align items to the start of the scroll container */
-    }
-
-    .project-item img {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .project-info {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .project-info h3 {
-        font-size: 20px;
-    }
-
-    .project-info p {
-        font-size: 14px;
-    }
-}
-
-/* Tablet and Small Laptop (for context) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .projects-section {
-        padding: 40px 7%;
-    }
-
-    .projects-section h2 {
-        font-size: 32px;
-        margin-bottom: 40px;
-    }
-
-    .projects-grid {
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    .project-item {
-        flex-direction: row;
-        text-align: left; /* Align text left for larger screens */
-    }
-
-    .project-item img {
-        width: 40%;
-    }
-
-    .project-info {
-        width: 60%;
-        padding: 20px;
-    }
-
-    .project-info h3 {
-        font-size: 24px;
-    }
-
-    .project-info p {
-        font-size: 16px;
-    }
-}
+  }
