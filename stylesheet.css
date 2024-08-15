@@ -369,15 +369,22 @@ footer p {
 }
 
 /* Media Queries */
+/* Base styles (unchanged) */
+
+/* ... (existing base styles) ... */
+
+/* Media Queries */
 
 /* Phone (mobile) */
 @media (max-width: 600px) {
     .header {
-        padding: 20px 5%;
+        padding: 15px 5%;
     }
 
     .pilot-image {
         top: 60%;
+        right: 5px;
+        transform: translateY(60%);
     }
 
     .home-content h3 {
@@ -385,18 +392,19 @@ footer p {
     }
 
     .home-content h1 {
-        font-size: 36px;
+        font-size: 32px;
+        margin: -2px 0;
     }
 
     .home-sci a {
         width: 30px;
         height: 30px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .btn-box {
         padding: 10px 20px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .projects-section,
@@ -405,12 +413,14 @@ footer p {
         padding: 30px 5%;
     }
 
-    .projects-grid {
+    .projects-grid,
+    .skills-grid {
         flex-direction: column;
     }
 
     .project-item {
         flex-direction: column;
+        width: 100%;
     }
 
     .project-item img {
@@ -420,16 +430,22 @@ footer p {
     .skill-item {
         max-width: 100%;
     }
+
+    .contact-section form {
+        padding: 0 10px;
+    }
 }
 
-/* Laptop */
+/* Tablet and Small Laptop */
 @media (min-width: 601px) and (max-width: 1024px) {
     .header {
-        padding: 20px 7%;
+        padding: 15px 7%;
     }
 
     .pilot-image {
         top: 50%;
+        right: 10px;
+        transform: translateY(50%);
     }
 
     .home-content h3 {
@@ -437,17 +453,18 @@ footer p {
     }
 
     .home-content h1 {
-        font-size: 48px;
+        font-size: 44px;
+        margin: -2px 0;
     }
 
     .home-sci a {
         width: 35px;
         height: 35px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .btn-box {
-        padding: 10px 25px;
+        padding: 12px 24px;
         font-size: 18px;
     }
 
@@ -458,6 +475,48 @@ footer p {
     }
 
     .projects-grid {
-        flex-direction: column;
+        flex-direction: row;
+    }
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 1025px) {
+    .header {
+        padding: 20px 10%;
+    }
+
+    .pilot-image {
+        top: 55%;
+        right: 10px;
+        transform: translateY(50%);
+    }
+
+    .home-content h3 {
+        font-size: 32px;
+    }
+
+    .home-content h1 {
+        font-size: 56px;
+    }
+
+    .home-sci a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .btn-box {
+        padding: 12px 28px;
+        font-size: 20px;
+    }
+
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        padding: 50px 10%;
+    }
+
+    .projects-grid {
+        flex-direction: row;
     }
 }
