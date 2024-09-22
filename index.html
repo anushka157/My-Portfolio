@@ -228,16 +228,33 @@
 
 
   <footer>
-    
+    <!-- <div class="social-buttons">
+        <a href="#"><img src="/img/fb.svg" alt="Facebook"></a>
+        <a href="#"><img src="/img/insta.svg" alt="Instagram"></a>
+        <a href="#"><img src="/img/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="/img/linkedin.svg" alt="LinkedIn"></a>
+    </div> -->
     <p>&copy; 2024 Anushka Shrivastava. All rights reserved.</p>
   </footer>
 
-  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script>
 
+    // $(document).ready(function () {
+    //   $('nav a').on('click', function (event) {
+    //     if (this.hash !== "") {
+    //       event.preventDefault();
+    //       const hash = this.hash;
+    //       $('html, body').animate({
+    //         scrollTop: $(hash).offset().top
+    //       }, 500);
+    //     }
+    //   });
+    // });
+   
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -258,10 +275,39 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         }
     });
 });
+  document.addEventListener('mousemove', function(e) {
+    for (let i = 0; i < 4; i++) { // Create 4 stars per movement
+      const star = document.createElement('div');
+      star.classList.add('cursor-star');
+      document.body.appendChild(star);
 
+      // Randomize size between 5px and 10px
+      const size = Math.random() * 6 + 5 + 'px'; // Adjusted range
+      star.style.width = size;
+      star.style.height = size;
+
+      // Randomize position slightly around the cursor
+      star.style.left = e.pageX + Math.random() * 30 - 15 + 'px';
+      star.style.top = e.pageY + Math.random() * 30 - 15 + 'px';
+
+      // Set random rotation for dynamic effect
+      const rotation = Math.random() * 360 + 'deg';
+      star.style.transform = `rotate(${rotation})`;
+
+      // Set random border colors for the stars
+      const colors = ['#ff69b4', '#ff6347', '#1e90ff', '#32cd32', '#ffa500', '#8a2be2', '#ffd700', '#add8e6'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      star.style.borderColor = randomColor; // Border color
+
+      // Remove star after animation completes
+      setTimeout(() => {
+        star.remove();
+      }, 1500); // Matches the animation duration
+    }
+  });
 </script>
 
- 
+  </script>
 </body>
 
 </html>
